@@ -32,11 +32,11 @@ public class EmployeeController {
 		List<EmployeeBean> emplist = employeeDao.emploeeList();
 		for(EmployeeBean emp :emplist) {
 			
-			System.out.println(emp.geteId() + " -" + emp.geteName()+ " -"+emp.geteAge());
+			System.out.println(emp.geteId() + " -" + emp.geteName()+ " -"+emp.geteAge()+"-"+emp.getrName());
 		}
 		
-		EmployeeBean emBean = employeeDao.getEmployeeByName("raj");
-		System.out.println(emBean.geteAge());
+		//EmployeeBean emBean = employeeDao.getEmployeeByName("raj");
+		//System.out.println(emBean.geteAge());
 		
 	}
 	
